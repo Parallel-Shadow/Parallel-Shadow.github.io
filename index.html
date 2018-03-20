@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<script>
+	
+	function muestraCapa(enlace){
+		
+		
+		var hijos = document.getElementById("portfolioBox").childNodes;
+		
+		//alert(hijos.length);
+		
+		for (var i = 0; i < hijos.length; i+=1) {
+			//alert(hijos[i].nodeType);
+			if(hijos[i].nodeType == 1){
+				hijos[i].style.display = "none";	
+			}
+			
+			
+			
+		  	//console.log("En el índice '" + i + "' hay este valor: " + miArray[i]);*/
+		}		
+		
+		
+		document.getElementById(enlace).style.display = "block";
+		
+		
+		
+	}
+	
+</script>
+
+</head>
+
+
+<body>
+<header id="header"><h1>Bienvenidos a mi portfolio</h1></header>
+	<main id="portfolioBox">
+		<section id="Portfolio">
+		</section>
+		<section id="Portfolio2">
+			<h1>Unos ejemplos de mis trabajos.</h1>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/4WKdA83bpNs"></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/Nnk1u0vTWyk" ></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/sYU1Ph7esz4" ></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/zf2raGM7rYA" ></iframe>
+
+		</section>
+		<section id="Portfolio3">
+
+			<h1>¡Contacta conmigo!</h1>
+			<h3>Puedes ponerte en contacto conmigo mediante:<br>
+			Mail: maildeejemplo@gmail.com<br>
+			Tlf.: 666002310<br>
+			Puedes descargar mi CV completo desde
+				<a href="resources/CV-Europass-20171019-MuñozMartin-ES.doc" download="CV">Aqui</a><br>
+			¡O en las redes sociales que tienes a la derecha!</h3>
+
+		</section>
+		<section id="Portfolio4">
+		  <h1>Aitor Muñoz Martin</h1>
+          <h4>Soy un animador y diseñador de 3D en pleno aprendizaje.<br>
+          Por el momento me encuentro finalizando mis estudios y con muchisimas ganas de incorporarme al mundo laboral.<br>
+          Estoy en esto por pasión y completamente decidido a resolver cualquier problema que se me ponga por delante.</h4><br>
+          <h3>Herramientas que utilizo:</h3><br>
+          <h4>Photoshop, Illustrator,Maya, 3D Max, Dreamweaver, Mudbox y Nuke</h4><br>
+          <h3>Lenguajes de programación:</h3><br>
+          <h4>PHP, MySql, java, JavaScript, C# y Oracle</h4>
+		</section>
+	</main>
+	<nav id="Menu">
+		<ul id="MenuIzq">
+		  <li><a class="Inicio" id="inicio" onclick="muestraCapa('Portfolio');">Inicio</a></li>
+		  <li><a class="Portfolio" id="portfolio" onclick="muestraCapa('Portfolio2');">Portfolio</a></li>
+		  <li><a class="Contact" id="contact" onclick="muestraCapa('Portfolio3');">Contacto</a></li>
+		  <li><a class="About" id="about" onclick="muestraCapa('Portfolio4');">About me</a></li>
+		</ul>
+		<ul id="MenuDer">
+		  <li><a href="https://www.facebook.com/aitor.munoz.96" class="fa fa-facebook"></a></li>
+		  <li><a href="https://www.twitter.com" class="fa fa-twitter"></a></li>
+		  <li><a href="https://www.youtube.com" class="fa fa-youtube"></a></li>
+		  <li><a href="https://www.instagram.com/parallel.shdw" class="fa fa-instagram"></a></li>
+		</ul>
+	</nav>
+</body>
+</html>

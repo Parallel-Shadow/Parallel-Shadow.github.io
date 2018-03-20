@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+img{
+	
+	width: 50%;
+	height: 50%;
+}
+html, body{
+	border: 60px solid rgba(0, 0, 0, .55);
+    background-clip: padding-box;
+	background: url(../resources/BG1.gif);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+#header{
+	color: white;
+	text-align: center;
+}
+#portfolioBox{
+	border-radius: 25px;
+	display: block;
+	align-items: center;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+	right: 20%;
+	background:rgba(255,255,255,0.3);
+}
+#Portfolio{
+	display: none;
+	background: rgba(0,0,0,0,0)
+}
+#Portfolio2{
+	display: none;
+	align-items: center;
+	text-align: center;
+	padding-top: 5px;
+}
+#Portfolio3{
+	display: none;
+	align-content: center;
+	padding-left: 20px;
+	padding-top: 250px;
+	padding-bottom: 250px;
+}
+#Portfolio4{
+	
+	display: none;
+	align-items: center;
+	padding-left: 20px;
+	padding-top: 250px;
+	padding-bottom: 250px;
+}
+
+#Menu {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background:rgba(255,255,255,0.2);
+	
+}
+#Menu ul {
+	border-radius: 25px;
+    list-style-type: none;
+    margin: 15px;
+    padding: 23px;
+    width: 150px;
+	color: rgba(176,150,150,0.50);
+}
+#Menu li {
+	margin-top: 5px;
+	border-radius: 25px;
+    background:#63826D;
+    text-align: center;
+    
+}
+
+#Menu li a {
+    display: block;
+    color: #000;
+    padding: 10px 16px;
+    text-decoration:none;
+}
+
+
+#Menu li a:hover {
+	border-radius: 25px;
+    background-color: #338A8A;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
